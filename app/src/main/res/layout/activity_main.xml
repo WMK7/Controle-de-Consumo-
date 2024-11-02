@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:textAlignment="center"
+    android:background="#DAD6D4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="CONTROLE DE CONSUMO"
+        android:textAlignment="center"
+        android:textColor="@android:color/system_accent1_400"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etAparelhoMain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cpborda"
+        android:ems="10"
+        android:hint="Nome do Aparelho"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="#036CC0" />
+
+    <EditText
+        android:id="@+id/etPotMain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cpborda"
+        android:ems="10"
+        android:hint="Potência do Aparelho em Watts"
+        android:inputType="text"
+        android:paddingStart="10dp" />
+
+    <EditText
+        android:id="@+id/etKwhMain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cpborda"
+        android:ems="10"
+        android:hint="Valor kwh"
+        android:inputType="numberDecimal"
+        android:paddingStart="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etTempMain"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/cpborda"
+            android:ems="10"
+            android:hint="Tempo de Uso"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp" />
+
+        <Spinner
+            android:id="@+id/spTempMain"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/cpborda" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btCalcularMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2E9A33"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btLimparMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F9022F"
+        android:text="Limpar" />
+</LinearLayout>
